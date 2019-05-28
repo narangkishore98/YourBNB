@@ -7,5 +7,5 @@ public class Appartment extends  Property{
          id++;
          setPropertyID(id);
      }
-     public void 
+     public void
 }
