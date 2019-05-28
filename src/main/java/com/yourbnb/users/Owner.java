@@ -1,6 +1,8 @@
 package com.yourbnb.users;
 
-public class Owner extends User
+import com.yourbnb.IDisplay;
+
+public class Owner extends User implements IDisplay
 {
     private static int id;
 
