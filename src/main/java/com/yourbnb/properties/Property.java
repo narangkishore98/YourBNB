@@ -1,5 +1,6 @@
 package com.yourbnb.properties;
 import com.yourbnb.IDisplay;
+import com.yourbnb.exceptions.InvalidPropertyException;
 
 public abstract class Property implements IDisplay {
 
@@ -38,7 +39,11 @@ public abstract class Property implements IDisplay {
         return maxPeopleAllowed;
     }
 
-    public void setMaxPeopleAllowed(byte maxPeopleAllowedd) {
+    public void setMaxPeopleAllowed(byte maxPeopleAllowed) {
+        if(maxPeopleAllowed<0)
+        {
+            throw new InvalidPropertyException("Max people cannot go in negative. your value: "+maxPeopleAllowed);
+        }
         this.maxPeopleAllowed = maxPeopleAllowed;
     }
 
@@ -47,6 +52,10 @@ public abstract class Property implements IDisplay {
     }
 
     public void setPerPersonPrice(float perPersonPrice) {
+        if(perPersonPrice<0)
+        {
+            throw new InvalidPropertyException("per person price cannot go in negative. your value: "+perPersonPrice);
+        }
         this.perPersonPrice = perPersonPrice;
     }
 
@@ -55,6 +64,10 @@ public abstract class Property implements IDisplay {
     }
 
     public void setPrice(float price) {
+        if(price<0)
+        {
+            throw new InvalidPropertyException("price cannot go in negative. your value: "+price);
+        }
         this.price = price;
     }
     public abstract  String propertyDescription();
