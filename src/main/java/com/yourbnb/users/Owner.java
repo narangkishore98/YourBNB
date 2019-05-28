@@ -40,7 +40,7 @@ public class Owner extends User implements IDisplay
     @Override
     public String display()
     {
-        String password = "*";
+        String password = "";
         for(int i=0;i<getPassword().length();i++)
         {
             password+="*";
