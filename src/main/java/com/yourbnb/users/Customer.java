@@ -33,6 +33,6 @@ public class Customer extends  User implements IDisplay
 
     @Override
     public String display() {
-        return "An individual who holds the rights to rent his property";
+        return "An individual who holds the rights to rent the property";
     }
 }
