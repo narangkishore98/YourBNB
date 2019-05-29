@@ -45,6 +45,33 @@
             "perPersonPrice": 9,
             "price": 15
 
+          },
+          {
+            "propertyID": "A904",
+            "propertyName": "Bajwa House",
+            "fullAddress": "4 Blue Diamond Drive, Brampton, ON - L6S 6K2",
+            "maxPeopleAllowed": 2,
+            "perPersonPrice": 9,
+            "price": 15
+
+          },
+          {
+            "propertyID": "A905",
+            "propertyName": "Water Front Living Apartment",
+            "fullAddress": "2770 Aquitaine Avenue, Toronto, ON - L5N 3K5",
+            "maxPeopleAllowed": 2,
+            "perPersonPrice": 65,
+            "price": 80
+
+          },
+          {
+            "propertyID": "A906",
+            "propertyName": "",
+            "fullAddress": "4 Blue Diamond Drive, Brampton, ON - L6S 6K2",
+            "maxPeopleAllowed": 2,
+            "perPersonPrice": 9,
+            "price": 15
+
           }
         ],
         [
