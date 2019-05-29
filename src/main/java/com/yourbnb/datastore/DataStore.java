@@ -20,7 +20,7 @@ public class DataStore
         Date d = new Date();
         DateFormat df = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss a");
 
-        fw.write(df.format(d)+" --- "+message);
+        fw.write(df.format(d)+" ---- "+message);
     }
 
 
