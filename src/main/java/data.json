@@ -11,7 +11,7 @@
       "properties": [
         [
           {
-              "propertyID": "A901",
+              "propertyID": "C901",
             "propertyName": "Sky View Maynor Condominium",
               "fullAddress": "Suite 1049, 100 Mornelle Court, Scarborough, ON - M1E 4X2",
             "maxPeopleAllowed": 6,
@@ -20,7 +20,7 @@
 
           },
           {
-            "propertyID": "A902",
+            "propertyID": "A901",
             "propertyName": "Sheraton Centre Toronto Apartment",
             "fullAddress": "123 Queen St W, Toronto, ON - M5H 2M9",
             "maxPeopleAllowed": 4,
@@ -29,7 +29,7 @@
 
           },
           {
-            "propertyID": "A903",
+            "propertyID": "H901",
             "propertyName": "Sham Villa",
             "fullAddress": "65 Norn Crescent,Markham, ON - L3S 2A2",
             "maxPeopleAllowed": 1,
@@ -38,7 +38,7 @@
 
           },
           {
-            "propertyID": "A904",
+            "propertyID": "H902",
             "propertyName": "Bajwa House",
             "fullAddress": "4 Blue Diamond Drive, Brampton, ON - L6S 6K2",
             "maxPeopleAllowed": 2,
@@ -47,7 +47,7 @@
 
           },
           {
-            "propertyID": "A905",
+            "propertyID": "A902",
             "propertyName": "Water Front Living Apartment",
             "fullAddress": "2770 Aquitaine Avenue, Toronto, ON - L5N 3K5",
             "maxPeopleAllowed": 2,
@@ -56,7 +56,7 @@
 
           },
           {
-            "propertyID": "A906",
+            "propertyID": "B901",
             "propertyName": "Mc Lowan House",
             "fullAddress": "2215 Bennington Gate, Toronto, ON - L6J 5Z4",
             "maxPeopleAllowed": 4,
@@ -67,7 +67,7 @@
         ],
         [
           {
-            "propertyID": "A901",
+            "propertyID": "C901",
             "propertyName": "Sky View Maynor Condominium",
             "fullAddress": "Suite 1049, 100 Mornelle Court, Scarborough, ON - M1E 4X2",
             "maxPeopleAllowed": 6,
@@ -79,7 +79,7 @@
 
           },
           {
-            "propertyID": "A903",
+            "propertyID": "H901",
             "propertyName": "Sham Villa",
             "fullAddress": "65 Norn Crescent,Markham, ON - L3S 2A2",
             "maxPeopleAllowed": 1,
@@ -90,7 +90,7 @@
             "checkoutdate": "21/04/2019"
           },
           {
-            "propertyID": "A906",
+            "propertyID": "B901",
             "propertyName": "Mc Lowan House",
             "fullAddress": "2215 Bennington Gate, Toronto, ON - L6J 5Z4",
             "maxPeopleAllowed": 4,
