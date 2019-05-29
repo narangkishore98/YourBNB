@@ -77,21 +77,26 @@
         [
           {
             "propertyID": "A901",
-            "propertyName": "Sky Maynor",
+            "propertyName": "Sky View Maynor Condominium",
             "fullAddress": "Suite 1049, 100 Mornelle Court, Scarborough, ON - M1E 4X2",
-            "maxPeopleAllowed": 5,
-            "perPersonPrice": 500.54,
-            "price": 5000.00
+            "maxPeopleAllowed": 6,
+            "perPersonPrice": 15,
+            "price": 65,
+            "bookingdate": "02/05/2019",
+            "checkingdate": "04/05/2019",
+            "checkoutdate": "05/05/2019"
 
           },
           {
-            "propertyID": "A901",
-            "propertyName": "Sky Maynor",
-            "fullAddress": "Suite 1049, 100 Mornelle Court, Scarborough, ON - M1E 4X2",
-            "maxPeopleAllowed": 5,
-            "perPersonPrice": 500.54,
-            "price": 5000.00
-
+            "propertyID": "A903",
+            "propertyName": "Sham Villa",
+            "fullAddress": "65 Norn Crescent,Markham, ON - L3S 2A2",
+            "maxPeopleAllowed": 1,
+            "perPersonPrice": 13,
+            "price": 13,
+            "bookingdate": "15/04/2019",
+            "checkingdate": "19/04/2019",
+            "checkoutdate": "21/04/2019"
           },
           {
             "propertyID": "A901",
