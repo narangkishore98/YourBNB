@@ -17,6 +17,7 @@ public abstract class Property implements IDisplay {
 
     protected void setPropertyID(String propertyID)
     {
+
         this.propertyID = propertyID;
     }
     public String getPropertyName() {
