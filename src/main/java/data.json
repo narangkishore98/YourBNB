@@ -1,0 +1,84 @@
+{
+  "users": [
+    {
+      "userID":"C100",
+      "firstName": "Kishore",
+      "lastName": "Narang",
+      "gender": "M",
+      "email": "narangkishore98@gmail.com",
+      "mobile": "6477639826",
+      "password": "Hello@223",
+      "properties": [
+        [
+          {
+              "propertyID": "A901",
+            "propertyName": "Sky Maynor",
+              "fullAddress": "Suite 1049, 100 Mornelle Court, Scarborough, ON - M1E 4X2",
+            "maxPeopleAllowed": 5,
+            "perPersonPrice": 500.54,
+            "price": 5000.00
+
+          },
+          {
+            "propertyID": "A901",
+            "propertyName": "Sky Maynor",
+            "fullAddress": "Suite 1049, 100 Mornelle Court, Scarborough, ON - M1E 4X2",
+            "maxPeopleAllowed": 5,
+            "perPersonPrice": 500.54,
+            "price": 5000.00
+
+          },
+          {
+            "propertyID": "A901",
+            "propertyName": "Sky Maynor",
+            "fullAddress": "Suite 1049, 100 Mornelle Court, Scarborough, ON - M1E 4X2",
+            "maxPeopleAllowed": 5,
+            "perPersonPrice": 500.54,
+            "price": 5000.00
+
+          },
+          {
+            "propertyID": "A901",
+            "propertyName": "Sky Maynor",
+            "fullAddress": "Suite 1049, 100 Mornelle Court, Scarborough, ON - M1E 4X2",
+            "maxPeopleAllowed": 5,
+            "perPersonPrice": 500.54,
+            "price": 5000.00
+
+          }
+        ],
+        [
+          {
+            "propertyID": "A901",
+            "propertyName": "Sky Maynor",
+            "fullAddress": "Suite 1049, 100 Mornelle Court, Scarborough, ON - M1E 4X2",
+            "maxPeopleAllowed": 5,
+            "perPersonPrice": 500.54,
+            "price": 5000.00
+
+          },
+          {
+            "propertyID": "A901",
+            "propertyName": "Sky Maynor",
+            "fullAddress": "Suite 1049, 100 Mornelle Court, Scarborough, ON - M1E 4X2",
+            "maxPeopleAllowed": 5,
+            "perPersonPrice": 500.54,
+            "price": 5000.00
+
+          },
+          {
+            "propertyID": "A901",
+            "propertyName": "Sky Maynor",
+            "fullAddress": "Suite 1049, 100 Mornelle Court, Scarborough, ON - M1E 4X2",
+            "maxPeopleAllowed": 5,
+            "perPersonPrice": 500.54,
+            "price": 5000.00
+
+          }
+        ]
+      ]
+
+    }
+
+  ]
+}
