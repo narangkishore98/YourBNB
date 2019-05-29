@@ -66,11 +66,11 @@
           },
           {
             "propertyID": "A906",
-            "propertyName": "",
-            "fullAddress": "4 Blue Diamond Drive, Brampton, ON - L6S 6K2",
-            "maxPeopleAllowed": 2,
-            "perPersonPrice": 9,
-            "price": 15
+            "propertyName": "Mc Lowan House",
+            "fullAddress": "2215 Bennington Gate, Toronto, ON - L6J 5Z4",
+            "maxPeopleAllowed": 4,
+            "perPersonPrice": 30,
+            "price": 100
 
           }
         ],
