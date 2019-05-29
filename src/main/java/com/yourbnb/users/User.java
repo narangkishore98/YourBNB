@@ -3,7 +3,7 @@ package com.yourbnb.users;
 import com.yourbnb.IDisplay;
 
 abstract public class User implements IDisplay {
-    private int userID;
+    private String userID;
     private String userType; // [Owner] Type [Customer] Type
     private String firstName;
     private String lastName;
@@ -13,9 +13,9 @@ abstract public class User implements IDisplay {
     private String mobile;
     public   String getUserID()
     {
-        return  Integer.toString(userID);
+        return  userID;
     }
-    protected void setUserID(int userID)
+    public void setUserID(String userID)
     {
         this.userID = userID;
     }

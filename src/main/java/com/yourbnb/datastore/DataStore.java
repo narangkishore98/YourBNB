@@ -8,9 +8,9 @@ import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.List;
 
-public class DataStore
+
+public class  DataStore
 {
     static String fileName = "log.txt";
     public static void log(String message) throws IOException
@@ -21,6 +21,10 @@ public class DataStore
         DateFormat df = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss a");
 
         fw.write(df.format(d)+" --- "+message);
+    }
+    public static void changeLogPath(String newFileName)
+    {
+        fileName = newFileName;
     }
 
 

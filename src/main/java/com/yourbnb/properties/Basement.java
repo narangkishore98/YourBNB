@@ -4,10 +4,10 @@ import com.yourbnb.IDisplay;
 
 public class Basement  extends  Property implements IDisplay {
 
-    private static  int id;
+
     public Basement()
     {
-        setPropertyID(++id);
+
     }
     @Override
     public String propertyDescription() {
@@ -17,11 +17,6 @@ public class Basement  extends  Property implements IDisplay {
                 "Max People Allowed: "+getMaxPeopleAllowed() +"\n" +
                 "Per Person Price: "+getPerPersonPrice()+"\n" +
                 "Whole Rent Price"+getPrice();
-    }
-    @Override
-    public String getPropertyID()
-    {
-        return "B"+super.getPropertyID();
     }
 
     @Override

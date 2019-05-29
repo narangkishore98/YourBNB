@@ -4,17 +4,13 @@ import com.yourbnb.IDisplay;
 
 public class Customer extends  User implements IDisplay
 {
-    private  static  int id;
+
     Customer()
     {
-        setUserID(++id);
+
         setUserType("Customer");
     }
-    @Override
-    public String getUserID()
-    {
-        return "O"+super.getUserID();
-    }
+
 
     @Override
     public String userDescription() {

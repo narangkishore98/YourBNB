@@ -8,12 +8,10 @@ import java.util.List;
 
 public class Owner extends User implements IDisplay
 {
-    private static int id;
     List<Property> propertyList;
     public Owner()
     {
-        id++;
-        setUserID(id);
+
         propertyList = new ArrayList<Property>();
         setUserType("Owner");
     }
@@ -27,11 +25,7 @@ public class Owner extends User implements IDisplay
         setPassword(password);
         setGender(gender);
     }
-    @Override
-    public String getUserID()
-    {
-        return "O"+ super.getUserID();
-    }
+
     @Override
     public String userDescription()
     {

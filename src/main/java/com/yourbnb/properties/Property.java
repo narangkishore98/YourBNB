@@ -9,13 +9,13 @@ public abstract class Property implements IDisplay {
     private byte maxPeopleAllowed;
     private float perPersonPrice;
     private float price;
-    private int  propertyID;
+    private String  propertyID;
     public   String getPropertyID()
     {
-        return  Integer.toString(propertyID);
+        return  (propertyID);
     }
 
-    protected void setPropertyID(int propertyID)
+    protected void setPropertyID(String propertyID)
     {
         this.propertyID = propertyID;
     }
