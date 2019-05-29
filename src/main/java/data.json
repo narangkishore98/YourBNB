@@ -47,15 +47,6 @@
 
           },
           {
-            "propertyID": "A904",
-            "propertyName": "Bajwa House",
-            "fullAddress": "4 Blue Diamond Drive, Brampton, ON - L6S 6K2",
-            "maxPeopleAllowed": 2,
-            "perPersonPrice": 9,
-            "price": 15
-
-          },
-          {
             "propertyID": "A905",
             "propertyName": "Water Front Living Apartment",
             "fullAddress": "2770 Aquitaine Avenue, Toronto, ON - L5N 3K5",
@@ -99,12 +90,15 @@
             "checkoutdate": "21/04/2019"
           },
           {
-            "propertyID": "A901",
-            "propertyName": "Sky Maynor",
-            "fullAddress": "Suite 1049, 100 Mornelle Court, Scarborough, ON - M1E 4X2",
-            "maxPeopleAllowed": 5,
-            "perPersonPrice": 500.54,
-            "price": 5000.00
+            "propertyID": "A906",
+            "propertyName": "Mc Lowan House",
+            "fullAddress": "2215 Bennington Gate, Toronto, ON - L6J 5Z4",
+            "maxPeopleAllowed": 4,
+            "perPersonPrice": 30,
+            "price": 100,
+            "bookingdate": "20/11/2018",
+            "checkingdate": "23/11/2018",
+            "checkoutdate": "27/11/2018"
 
           }
         ]
