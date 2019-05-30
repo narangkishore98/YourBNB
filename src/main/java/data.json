@@ -144,6 +144,43 @@
           }
         ]
       ]
+    },
+    {
+      "userID": "C102",
+      "firstName": "Nikhil",
+      "lastName": "Chopra",
+      "gender": "M",
+      "email": "nikhilpaji@gmail.com",
+      "mobile": "4164362550",
+      "password": "Hello@paji",
+      "properties":
+      [
+        [],
+        [
+          {
+            "propertyID": "H901",
+            "propertyName": "Sham Villa",
+            "fullAddress": "65 Norn Crescent,Markham, ON - L3S 2A2",
+            "maxPeopleAllowed": 1,
+            "perPersonPrice": 13,
+            "price": 13,
+            "bookingdate": "15/01/2018",
+            "checkingdate": "17/01/2018",
+            "checkoutdate": "19/01/2018"
+          },
+          {
+            "propertyID": "A901",
+            "propertyName": "Sheraton Centre Toronto Apartment",
+            "fullAddress": "123 Queen St W, Toronto, ON - M5H 2M9",
+            "maxPeopleAllowed": 4,
+            "perPersonPrice": 200,
+            "price": 600,
+            "bookingdate": "08/02/2019",
+            "checkingdate": "11/02/2019",
+            "checkoutdate": "12/02/2019"
+          }
+        ]
+      ]
     }
 
   ]
