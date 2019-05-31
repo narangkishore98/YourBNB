@@ -1,6 +1,10 @@
 package com.yourbnb.users;
 
 import com.yourbnb.IDisplay;
+import com.yourbnb.exceptions.InvalidEmailException;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 abstract public class User implements IDisplay {
     private String userID;
@@ -56,7 +60,18 @@ abstract public class User implements IDisplay {
     }
 
     public void setEmail(String email) {
-        this.email = email;
+
+        String regex = "^(.+)@(.+)$";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(email);
+        if(matcher.matches())
+        {
+            this.email=email;
+        }
+        else
+        {
+            throw new InvalidEmailException("Invalid Email.");
+        }
     }
 
     public String getPassword() {
