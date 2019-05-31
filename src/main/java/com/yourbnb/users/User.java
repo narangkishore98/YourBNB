@@ -61,7 +61,7 @@ abstract public class User implements IDisplay {
 
     public void setEmail(String email) {
 
-        String regex = "^(.+)@(.+)$";
+        String regex = "^[a-z0-9A-Z\\.]*@[a-z0-9A-Z]*\\.[a-z0-9A-Z]*$";
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(email);
         if(matcher.matches())

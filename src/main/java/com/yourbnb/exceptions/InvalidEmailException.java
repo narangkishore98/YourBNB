@@ -4,7 +4,7 @@ public class InvalidEmailException extends RuntimeException
 {
     private String message;
     public InvalidEmailException(String message) {
-        super();
+        super(message);
         this.message=message;
     }
 
