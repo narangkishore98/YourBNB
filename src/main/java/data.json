@@ -150,9 +150,9 @@
       "firstName": "Nikhil",
       "lastName": "Nikhil",
       "gender": "M",
-      "email": "nikhilpaji@gmail.com",
+      "email": "nikhil123@gmail.com",
       "mobile": "4164362550",
-      "password": "Hello@paji",
+      "password": "Hello@123",
       "properties":
       [
         [],
@@ -178,6 +178,18 @@
             "bookingdate": "08/02/2019",
             "checkingdate": "11/02/2019",
             "checkoutdate": "12/02/2019"
+          },
+          {
+            "propertyID": "D901",
+            "propertyName": "Fandango drive Brampton Basement",
+            "fullAddress": "91 Oakville St S, Brampton, ON - L5M2X2",
+            "maxPeopleAllowed": 2,
+            "perPersonPrice": 150,
+            "price": 300,
+            "bookingdate": "20/02/2019",
+            "checkingdate": "24/02/2019",
+            "checkoutdate": "26/02/2019"
+
           }
         ]
       ]
