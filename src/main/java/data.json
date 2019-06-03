@@ -47,7 +47,23 @@
             "perPersonPrice": 9,
             "price": 15
 
-          },
+          }
+        ],
+        []
+      ]
+
+    },
+    {
+      "userID":"C101",
+      "firstName": "TarlochanPreet",
+      "lastName": "Singh",
+      "gender": "M",
+      "email": "tarlochan5268@gmail.com",
+      "mobile": "4164362548",
+      "password": "Hello@5268",
+      "properties":
+      [
+        [
           {
             "propertyID": "A902",
             "propertyName": "Water Front Living Apartment",
@@ -68,45 +84,6 @@
           }
         ],
         []
-      ]
-
-    },
-    {
-      "userID":"C101",
-      "firstName": "TarlochanPreet",
-      "lastName": "Singh",
-      "gender": "M",
-      "email": "tarlochan5268@gmail.com",
-      "mobile": "4164362548",
-      "password": "Hello@5268",
-      "properties":
-      [
-        [],
-        [
-          {
-            "propertyID": "B901",
-            "propertyName": "Mc Lowan House",
-            "fullAddress": "2215 Bennington Gate, Toronto, ON - L6J 5Z4",
-            "maxPeopleAllowed": 4,
-            "perPersonPrice": 30,
-            "price": 100,
-            "bookingdate": "26/09/2018",
-            "checkingdate": "27/09/2018",
-            "checkoutdate": "28/09/2018"
-
-          },
-          {
-            "propertyID": "H901",
-            "propertyName": "Sham Villa",
-            "fullAddress": "65 Norn Crescent,Markham, ON - L3S 2A2",
-            "maxPeopleAllowed": 1,
-            "perPersonPrice": 13,
-            "price": 13,
-            "bookingdate": "05/02/2019",
-            "checkingdate": "07/02/2019",
-            "checkoutdate": "09/02/2019"
-          }
-        ]
       ]
     },
     {
