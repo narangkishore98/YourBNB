@@ -67,43 +67,7 @@
 
           }
         ],
-        [
-          {
-            "propertyID": "C901",
-            "propertyName": "Sky View Maynor Condominium",
-            "fullAddress": "Suite 1049, 100 Mornelle Court, Scarborough, ON - M1E 4X2",
-            "maxPeopleAllowed": 6,
-            "perPersonPrice": 15,
-            "price": 65,
-            "bookingdate": "02/05/2019",
-            "checkingdate": "04/05/2019",
-            "checkoutdate": "05/05/2019"
-
-          },
-          {
-            "propertyID": "H901",
-            "propertyName": "Sham Villa",
-            "fullAddress": "65 Norn Crescent,Markham, ON - L3S 2A2",
-            "maxPeopleAllowed": 1,
-            "perPersonPrice": 13,
-            "price": 13,
-            "bookingdate": "15/04/2019",
-            "checkingdate": "19/04/2019",
-            "checkoutdate": "21/04/2019"
-          },
-          {
-            "propertyID": "B901",
-            "propertyName": "Mc Lowan House",
-            "fullAddress": "2215 Bennington Gate, Toronto, ON - L6J 5Z4",
-            "maxPeopleAllowed": 4,
-            "perPersonPrice": 30,
-            "price": 100,
-            "bookingdate": "20/11/2018",
-            "checkingdate": "23/11/2018",
-            "checkoutdate": "27/11/2018"
-
-          }
-        ]
+        []
       ]
 
     },
@@ -158,37 +122,38 @@
         [],
         [
           {
+            "propertyID": "C901",
+            "propertyName": "Sky View Maynor Condominium",
+            "fullAddress": "Suite 1049, 100 Mornelle Court, Scarborough, ON - M1E 4X2",
+            "maxPeopleAllowed": 6,
+            "perPersonPrice": 15,
+            "price": 65,
+            "bookingdate": "02/05/2019",
+            "checkingdate": "04/05/2019",
+            "checkoutdate": "05/05/2019"
+
+          },
+          {
             "propertyID": "H901",
             "propertyName": "Sham Villa",
             "fullAddress": "65 Norn Crescent,Markham, ON - L3S 2A2",
             "maxPeopleAllowed": 1,
             "perPersonPrice": 13,
             "price": 13,
-            "bookingdate": "15/01/2018",
-            "checkingdate": "17/01/2018",
-            "checkoutdate": "19/01/2018"
+            "bookingdate": "15/04/2019",
+            "checkingdate": "19/04/2019",
+            "checkoutdate": "21/04/2019"
           },
           {
-            "propertyID": "A901",
-            "propertyName": "Sheraton Centre Toronto Apartment",
-            "fullAddress": "123 Queen St W, Toronto, ON - M5H 2M9",
+            "propertyID": "B901",
+            "propertyName": "Mc Lowan House",
+            "fullAddress": "2215 Bennington Gate, Toronto, ON - L6J 5Z4",
             "maxPeopleAllowed": 4,
-            "perPersonPrice": 200,
-            "price": 600,
-            "bookingdate": "08/02/2019",
-            "checkingdate": "11/02/2019",
-            "checkoutdate": "12/02/2019"
-          },
-          {
-            "propertyID": "D901",
-            "propertyName": "Fandango drive Brampton Basement",
-            "fullAddress": "91 Oakville St S, Brampton, ON - L5M2X2",
-            "maxPeopleAllowed": 2,
-            "perPersonPrice": 150,
-            "price": 300,
-            "bookingdate": "20/02/2019",
-            "checkingdate": "24/02/2019",
-            "checkoutdate": "26/02/2019"
+            "perPersonPrice": 30,
+            "price": 100,
+            "bookingdate": "20/11/2018",
+            "checkingdate": "23/11/2018",
+            "checkoutdate": "27/11/2018"
 
           }
         ]
