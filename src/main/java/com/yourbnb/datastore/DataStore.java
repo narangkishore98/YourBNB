@@ -16,6 +16,10 @@ public class  DataStore
     public static void log(String message) throws IOException
     {
         File f = new File(fileName);
+        if(!f.isFile())
+        {
+            f.createNewFile();
+        }
         FileWriter fw = new FileWriter(f,true);
         Date d = new Date();
         DateFormat df = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss a");
