@@ -4,10 +4,10 @@ import com.yourbnb.IDisplay;
 
 public class Condominium extends Property implements IDisplay
 {
-    private static  int id;
+
     public Condominium()
     {
-        setPropertyID(++id);
+
     }
 
     @Override
@@ -19,11 +19,8 @@ public class Condominium extends Property implements IDisplay
                 "Per Person Price: "+getPerPersonPrice()+"\n" +
                 "Whole Rent Price"+getPrice();
     }
-    @Override
-    public String getPropertyID()
-    {
-        return "C"+super.getPropertyID();
-    }
+
+
 
     @Override
     public String display() {
