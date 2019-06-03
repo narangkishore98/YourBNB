@@ -3,16 +3,15 @@ package com.yourbnb.users;
 import com.yourbnb.IDisplay;
 import com.yourbnb.properties.Property;
 
-import java.util.ArrayList;
-import java.util.List;
+
 
 public class Owner extends User implements IDisplay
 {
-    List<Property> propertyList;
+
     public Owner()
     {
 
-        propertyList = new ArrayList<Property>();
+
         setUserType("Owner");
     }
     public Owner(String firstName, String lastName, String email , String mobile, String password, char gender)
@@ -48,17 +47,17 @@ public class Owner extends User implements IDisplay
     }
     public void addProperty(Property property)
     {
-        propertyList.add(property);
+        getOwnerProperties().add(property);
     }
     public Property[] getProperties()
     {
-        return (Property[]) propertyList.toArray();
+        return (Property[]) getOwnerProperties().toArray();
     }
     public Property getProperty(String propertyID)
     {
 
         Property returner=null;
-        for(Property property:propertyList)
+        for(Property property:getOwnerProperties())
         {
             if(property.getPropertyID().equals(propertyID))
             {

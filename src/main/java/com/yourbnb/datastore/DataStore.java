@@ -2,6 +2,9 @@ package com.yourbnb.datastore;
 
 
 
+import com.yourbnb.properties.Property;
+import com.yourbnb.users.Customer;
+import com.yourbnb.users.Owner;
 import com.yourbnb.users.User;
 import org.json.simple.JSONObject;
 import org.json.simple.*;
@@ -9,6 +12,7 @@ import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
 import java.io.*;
+import java.lang.reflect.Array;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -45,7 +49,39 @@ public class  DataStore
         JSONObject root = (JSONObject) parser.parse(fileName);
 
         JSONArray jsonArrayUsers = (JSONArray) root.get("users");
-        Iterator<User> userIterator = jsonArrayUsers.iterator();
+        Iterator<JSONObject> userIterator = jsonArrayUsers.iterator();
+        while(userIterator.hasNext())
+        {
+
+
+            JSONObject jsonObject = userIterator.next();
+            String userid = (String) jsonObject.get("userid");
+            if(userid.startsWith("C"))
+            {
+                Customer  user = new Customer();
+                user.setUserID(userid);
+                user.setFirstName((String)jsonObject.get("firsName"));
+                user.setLastName((String)jsonObject.get("lastName"));
+                user.setEmail((String)jsonObject.get("email"));
+                user.setMobile((String)jsonObject.get("mobile"));
+                user.setGender((jsonObject.get("gender").toString().charAt(0)));
+                user.setPassword((String)jsonObject.get("password"));
+                List<Property> ownerProperties = new ArrayList<Property>();
+                JSONArray properties = (JSONArray) jsonObject.get("properties");
+                Iterator propertiesIterator = properties.iterator();
+                JSONArray ownerPropertiesArray = (JSONArray) propertiesIterator.next();
+                Iterator ownerPropertiesIterator = ownerPropertiesArray.iterator();
+                while(ownerPropertiesIterator.hasNext())
+                {
+
+                }
+
+            }
+            else if(userid.startsWith("O"))
+            {
+              Owner  user = new Owner();
+            }
+        }
 
 
 

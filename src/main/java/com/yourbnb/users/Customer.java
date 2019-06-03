@@ -5,7 +5,7 @@ import com.yourbnb.IDisplay;
 public class Customer extends  User implements IDisplay
 {
 
-    Customer()
+    public Customer()
     {
 
         setUserType("Customer");

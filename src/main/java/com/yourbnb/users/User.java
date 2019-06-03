@@ -2,14 +2,40 @@ package com.yourbnb.users;
 
 import com.yourbnb.IDisplay;
 import com.yourbnb.exceptions.InvalidEmailException;
+import com.yourbnb.properties.Property;
 
+import java.util.List;
+import java.util.Properties;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 abstract public class User implements IDisplay {
+    private  List<Property> ownerProperties;
+    private List<Property> customerProperties;
     private String userID;
     private String userType; // [Owner] Type [Customer] Type
     private String firstName;
+
+    public List<Property> getOwnerProperties() {
+        return ownerProperties;
+    }
+    public void addOwnerProperty(Property property)
+    {
+        ownerProperties.add(property);
+    }
+
+    public void setOwnerProperties(List<Property> ownerProperties) {
+        this.ownerProperties = ownerProperties;
+    }
+
+    public List<Property> getCustomerProperties() {
+        return customerProperties;
+    }
+
+    public void setCustomerProperties(List<Property> customerProperties) {
+        this.customerProperties = customerProperties;
+    }
+
     private String lastName;
     private char gender; // (M/m) for males {F/f) for females
     private String email;
