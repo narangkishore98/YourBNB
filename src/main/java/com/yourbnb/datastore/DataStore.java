@@ -2,12 +2,19 @@ package com.yourbnb.datastore;
 
 
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import com.yourbnb.users.User;
+import org.json.simple.JSONObject;
+import org.json.simple.*;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
+
+import java.io.*;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.Iterator;
+import java.util.List;
 
 
 public class  DataStore
@@ -29,6 +36,23 @@ public class  DataStore
     public static void changeLogPath(String newFileName)
     {
         fileName = newFileName;
+    }
+    public static  User[] getUsersFromJSON(String fileName) throws FileNotFoundException, ParseException {
+        User[] users = null;
+        List<User> userList = new ArrayList<User>();
+        FileReader fr = new FileReader(fileName);
+        JSONParser parser = new JSONParser();
+        JSONObject root = (JSONObject) parser.parse(fileName);
+
+        JSONArray jsonArrayUsers = (JSONArray) root.get("users");
+        Iterator<User> userIterator = jsonArrayUsers.iterator();
+
+
+
+        return  users;
+
+
+
     }
 
 
