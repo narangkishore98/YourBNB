@@ -4,11 +4,9 @@ import com.yourbnb.IDisplay;
 
 public class House extends Property implements IDisplay
 {
-    private static int id;
+
     public House()
     {
-        id++;
-        setPropertyID(id);
     }
     @Override
     public String getPropertyID()

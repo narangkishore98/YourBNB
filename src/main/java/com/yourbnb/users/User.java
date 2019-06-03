@@ -4,6 +4,7 @@ import com.yourbnb.IDisplay;
 import com.yourbnb.exceptions.InvalidEmailException;
 import com.yourbnb.properties.Property;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 import java.util.regex.Matcher;
@@ -15,6 +16,11 @@ abstract public class User implements IDisplay {
     private String userID;
     private String userType; // [Owner] Type [Customer] Type
     private String firstName;
+    public User()
+    {
+        ownerProperties = new ArrayList<Property>();
+        customerProperties = new ArrayList<Property>();
+    }
 
     public List<Property> getOwnerProperties() {
         return ownerProperties;
