@@ -9,11 +9,6 @@ public class Basement  extends  Property implements IDisplay {
     {
 
     }
-    @Override
-    public String getPropertyID()
-    {
-        return "B"+super.getPropertyID();
-    }
 
     @Override
     public String propertyDescription() {
