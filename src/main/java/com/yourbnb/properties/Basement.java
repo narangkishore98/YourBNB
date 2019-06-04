@@ -9,6 +9,7 @@ public class Basement  extends  Property implements IDisplay {
     {
 
     }
+
     @Override
     public String propertyDescription() {
         return "Property Name: "+getPropertyName()+"\n" +

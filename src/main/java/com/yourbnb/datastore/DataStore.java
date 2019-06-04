@@ -159,14 +159,14 @@ public class  DataStore
                     {
                         Apartment h = new Apartment();
                         h.setPropertyID(propertyID);
-                        h.setPropertyName((String)oJSONObject.get("propertyName"));
-                        h.setFullAddress((String)oJSONObject.get("fullAddress"));
-                        h.setMaxPeopleAllowed(((Long)oJSONObject.get("maxPeopleAllowed")).byteValue());
-                        h.setPerPersonPrice(((Long)oJSONObject.get("perPersonPrice")).floatValue());
-                        h.setPrice(((Long)oJSONObject.get("price")).floatValue());
-                        Date booking = sdf.parse((String)oJSONObject.get("bookingDate"));
-                        Date checkin = sdf.parse((String)oJSONObject.get("checkinDate"));
-                        Date checkout = sdf.parse((String)oJSONObject.get("checkoutDate"));
+                        h.setPropertyName((String) oJSONObject.get("propertyName"));
+                        h.setFullAddress((String) oJSONObject.get("fullAddress"));
+                        h.setMaxPeopleAllowed(((Long) oJSONObject.get("maxPeopleAllowed")).byteValue());
+                        h.setPerPersonPrice(((Long) oJSONObject.get("perPersonPrice")).floatValue());
+                        h.setPrice(((Long) oJSONObject.get("price")).floatValue());
+                        Date booking = sdf.parse((String) oJSONObject.get("bookingDate"));
+                        Date checkin = sdf.parse((String) oJSONObject.get("checkinDate"));
+                        Date checkout = sdf.parse((String) oJSONObject.get("checkoutDate"));
                         user.addCustomerProperty(h, booking, checkin, checkout);
                     }
                     else if(propertyID.startsWith("B"))
@@ -214,7 +214,6 @@ public class  DataStore
                         Date checkout = sdf.parse((String)oJSONObject.get("checkoutDate"));
                         user.addCustomerProperty(h, booking, checkin, checkout);
                     }
-
 
                 }
                 userList.add(user);

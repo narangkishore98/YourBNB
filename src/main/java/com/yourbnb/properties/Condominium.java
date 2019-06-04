@@ -10,6 +10,7 @@ public class Condominium extends Property implements IDisplay
 
     }
 
+
     @Override
     public String propertyDescription() {
         return "Property Name: "+getPropertyName()+"\n" +
