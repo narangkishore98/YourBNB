@@ -8,11 +8,7 @@ public class House extends Property implements IDisplay
     public House()
     {
     }
-    @Override
-    public String getPropertyID()
-    {
-        return "H"+super.getPropertyID();
-    }
+
 
 
 

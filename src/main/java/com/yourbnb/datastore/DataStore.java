@@ -42,6 +42,8 @@ public class  DataStore
     {
         fileName = newFileName;
     }
+
+
     public static  List<User> getUsersFromJSON(String fileName) throws IOException, ParseException, java.text.ParseException {
         List<User> userList = new ArrayList<User>();
         File f = new File(fileName);
@@ -67,7 +69,7 @@ public class  DataStore
             {
                 Owner  user = new Owner();
                 user.setUserID(userid);
-                user.setFirstName((String)jsonObject.get("firsName"));
+                user.setFirstName((String)jsonObject.get("firstName"));
                 user.setLastName((String)jsonObject.get("lastName"));
                 user.setEmail((String)jsonObject.get("email"));
                 user.setMobile((String)jsonObject.get("mobile"));
@@ -136,7 +138,7 @@ public class  DataStore
             {
                 Customer user = new Customer();
                 user.setUserID(userid);
-                user.setFirstName((String)jsonObject.get("firsName"));
+                user.setFirstName((String)jsonObject.get("firstName"));
                 user.setLastName((String)jsonObject.get("lastName"));
                 user.setEmail((String)jsonObject.get("email"));
                 user.setMobile((String)jsonObject.get("mobile"));
