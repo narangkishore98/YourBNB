@@ -11,8 +11,8 @@ import java.util.List;
 
 public class YourBNB
 {
-    public static void main(String[] args) throws IOException, ParseException {
-        List<User> users = DataStore.getUsersFromJSON("C:\\Users\\naran\\IdeaProjects\\YourBNB\\src\\main\\java\\com\\yourbnb\\data.json");
+    public static void main(String[] args) throws IOException, ParseException, java.text.ParseException {
+        List<User> users = DataStore.getUsersFromJSON("C:\\Users\\Nikhil\\YourBNB\\src\\main\\java\\com\\yourbnb\\datastore\\DataStore.java");
         System.out.println(users);
     }
 }
