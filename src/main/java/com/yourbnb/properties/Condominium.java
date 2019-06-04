@@ -12,7 +12,7 @@ public class Condominium extends Property implements IDisplay
 
 
     @Override
-    public String propertyDescription() {
+    public String display() {
         return "Property Name: "+getPropertyName()+"\n" +
                 "Property ID: "+getPropertyID()+"\n" +
                 "Address: "+getFullAddress()+"\n" +
@@ -24,7 +24,7 @@ public class Condominium extends Property implements IDisplay
 
 
     @Override
-    public String display() {
+    public String propertyDescription() {
         return "A condominium, often shortened to condo, in the United States of America and in most Canadian provinces, is a type of living space similar to an apartment but independently sellable and therefore regarded as real estate. ";
     }
 }

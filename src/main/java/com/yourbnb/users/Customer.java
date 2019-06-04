@@ -13,7 +13,8 @@ public class Customer extends  User implements IDisplay
 
 
     @Override
-    public String userDescription() {
+    public String display()
+    {
         String password = "";
         for(int i=0;i<getPassword().length();i++)
         {
@@ -26,9 +27,8 @@ public class Customer extends  User implements IDisplay
                 "Password: "+password+"\n" +
                 "Mobile: "+getMobile();
     }
-
     @Override
-    public String display() {
-        return "An individual who holds the rights to rent the property of owner";
+    public String userDescription() {
+        return "An individual who wants to rent the house.";
     }
 }

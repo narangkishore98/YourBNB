@@ -13,7 +13,7 @@ import java.util.regex.Pattern;
 
 abstract public class User implements IDisplay {
     private  List<Property> ownerProperties;
-    private  class CustomerProperties
+    public  class CustomerProperties
     {
         private Property property;
         private Date bookingDate, checkinDate, checkoutDate;
