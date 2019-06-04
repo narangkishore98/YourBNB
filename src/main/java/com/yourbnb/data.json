@@ -9,7 +9,7 @@
     "password": "Hello@223",
     "properties": [
       [{
-        "propertyID": "C901",
+        "propertyID": "O901",
         "propertyName": "Sky View Maynor Condominium",
         "fullAddress": "Suite 1049, 100 Mornelle Court, Scarborough, ON - M1E 4X2",
         "maxPeopleAllowed": 6,
@@ -45,7 +45,7 @@
     ]
   },
     {
-      "userID": "C101",
+      "userID": "O101",
       "firstName": "TarlochanPreet",
       "lastName": "Singh",
       "gender": "M",

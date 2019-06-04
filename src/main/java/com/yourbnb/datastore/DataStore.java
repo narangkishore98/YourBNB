@@ -42,8 +42,7 @@ public class  DataStore
     {
         fileName = newFileName;
     }
-    public static  User[] getUsersFromJSON(String fileName) throws IOException, ParseException {
-        User[] users = null;
+    public static  List<User> getUsersFromJSON(String fileName) throws IOException, ParseException {
         List<User> userList = new ArrayList<User>();
         File f = new File(fileName);
         FileReader fr = new FileReader(f);
@@ -144,9 +143,10 @@ public class  DataStore
                 user.setPassword((String)jsonObject.get("password"));
                 JSONArray properties = (JSONArray) jsonObject.get("properties");
                 Iterator propertiesIterator = properties.iterator();
+                propertiesIterator.next();
                 JSONArray customerPropertiesArray = (JSONArray) propertiesIterator.next();
                 Iterator customerPropertiesIterator = customerPropertiesArray.iterator();
-                customerPropertiesIterator.next();
+
                 while(customerPropertiesIterator.hasNext())
                 {
                     JSONObject oJSONObject = (JSONObject) customerPropertiesIterator.next();
@@ -208,7 +208,7 @@ public class  DataStore
 
 
 
-        return (User[]) userList.toArray();
+        return userList;
 
 
 

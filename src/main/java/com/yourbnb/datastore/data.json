@@ -2,7 +2,7 @@
   "users":
   [
     {
-      "userID":"C100",
+      "userID":"O100",
       "firstName": "Kishore",
       "lastName": "Narang",
       "gender": "M",
@@ -54,7 +54,7 @@
 
     },
     {
-      "userID":"C101",
+      "userID":"O101",
       "firstName": "TarlochanPreet",
       "lastName": "Singh",
       "gender": "M",
@@ -105,7 +105,7 @@
             "maxPeopleAllowed": 6,
             "perPersonPrice": 15,
             "price": 65,
-            "bookingdate": "03/05/2019",
+            "bookingDate": "03/05/2019",
             "checkingdate": "04/05/2019",
             "checkoutdate": "05/05/2019"
 
