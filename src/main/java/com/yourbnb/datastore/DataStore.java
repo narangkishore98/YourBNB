@@ -88,9 +88,9 @@ public class  DataStore
                         h.setPropertyID(propertyID);
                         h.setPropertyName((String)oJSONObject.get("propertyName"));
                         h.setFullAddress((String)oJSONObject.get("fullAddress"));
-                        h.setMaxPeopleAllowed((Byte)oJSONObject.get("maxPeopleAllowed"));
-                        h.setPerPersonPrice((Float)oJSONObject.get("perPersonPrice"));
-                        h.setPrice((Float)oJSONObject.get("price"));
+                        h.setMaxPeopleAllowed(((Long)oJSONObject.get("maxPeopleAllowed")).byteValue());
+                        h.setPerPersonPrice(((Long)oJSONObject.get("perPersonPrice")).floatValue());
+                        h.setPrice(((Long)oJSONObject.get("price")).floatValue());
 
                         user.addOwnerProperty(h);
                     }
@@ -100,10 +100,9 @@ public class  DataStore
                         h.setPropertyID(propertyID);
                         h.setPropertyName((String)oJSONObject.get("propertyName"));
                         h.setFullAddress((String)oJSONObject.get("fullAddress"));
-                        h.setMaxPeopleAllowed((Byte)oJSONObject.get("maxPeopleAllowed"));
-                        h.setPerPersonPrice((Float)oJSONObject.get("perPersonPrice"));
-                        h.setPrice((Float)oJSONObject.get("price"));
-
+                        h.setMaxPeopleAllowed(((Long)oJSONObject.get("maxPeopleAllowed")).byteValue());
+                        h.setPerPersonPrice(((Long)oJSONObject.get("perPersonPrice")).floatValue());
+                        h.setPrice(((Long)oJSONObject.get("price")).floatValue());
                         user.addOwnerProperty(h);
                     }
                     else if(propertyID.startsWith("C"))
@@ -112,11 +111,9 @@ public class  DataStore
                         h.setPropertyID(propertyID);
                         h.setPropertyName((String)oJSONObject.get("propertyName"));
                         h.setFullAddress((String)oJSONObject.get("fullAddress"));
-                        h.setMaxPeopleAllowed((Byte)oJSONObject.get("maxPeopleAllowed"));
-                        h.setPerPersonPrice((Float)oJSONObject.get("perPersonPrice"));
-                        h.setPrice((Float)oJSONObject.get("price"));
-
-                        user.addOwnerProperty(h);
+                        h.setMaxPeopleAllowed(((Long)oJSONObject.get("maxPeopleAllowed")).byteValue());
+                        h.setPerPersonPrice(((Long)oJSONObject.get("perPersonPrice")).floatValue());
+                        h.setPrice(((Long)oJSONObject.get("price")).floatValue()); user.addOwnerProperty(h);
                     }
                     else if(propertyID.startsWith("H"))
                     {
@@ -124,10 +121,9 @@ public class  DataStore
                         h.setPropertyID(propertyID);
                         h.setPropertyName((String)oJSONObject.get("propertyName"));
                         h.setFullAddress((String)oJSONObject.get("fullAddress"));
-                        h.setMaxPeopleAllowed((Byte)oJSONObject.get("maxPeopleAllowed"));
-                        h.setPerPersonPrice((Float)oJSONObject.get("perPersonPrice"));
-                        h.setPrice((Float)oJSONObject.get("price"));
-
+                        h.setMaxPeopleAllowed(((Long)oJSONObject.get("maxPeopleAllowed")).byteValue());
+                        h.setPerPersonPrice(((Long)oJSONObject.get("perPersonPrice")).floatValue());
+                        h.setPrice(((Long)oJSONObject.get("price")).floatValue());
                         user.addOwnerProperty(h);
                     }
 
@@ -197,9 +193,9 @@ public class  DataStore
                         h.setPropertyID(propertyID);
                         h.setPropertyName((String)oJSONObject.get("propertyName"));
                         h.setFullAddress((String)oJSONObject.get("fullAddress"));
-                        h.setMaxPeopleAllowed((Byte)oJSONObject.get("maxPeopleAllowed"));
-                        h.setPerPersonPrice((Float)oJSONObject.get("perPersonPrice"));
-                        h.setPrice((Float)oJSONObject.get("price"));
+                        h.setMaxPeopleAllowed(((Long)oJSONObject.get("maxPeopleAllowed")).byteValue());
+                        h.setPerPersonPrice(((Long)oJSONObject.get("perPersonPrice")).floatValue());
+                        h.setPrice(((Long)oJSONObject.get("price")).floatValue());
 
                         user.addOwnerProperty(h);
                     }
