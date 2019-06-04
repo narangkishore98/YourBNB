@@ -5,6 +5,7 @@ import com.yourbnb.exceptions.InvalidEmailException;
 import com.yourbnb.properties.Property;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Properties;
 import java.util.regex.Matcher;
@@ -12,14 +13,51 @@ import java.util.regex.Pattern;
 
 abstract public class User implements IDisplay {
     private  List<Property> ownerProperties;
-    private List<Property> customerProperties;
+    private  class CustomerProperties
+    {
+        private Property property;
+        private Date bookingDate, checkinDate, checkoutDate;
+
+        public Property getProperty() {
+            return property;
+        }
+
+        public void setProperty(Property property) {
+            this.property = property;
+        }
+
+        public Date getBookingDate() {
+            return bookingDate;
+        }
+
+        public void setBookingDate(Date bookingDate) {
+            this.bookingDate = bookingDate;
+        }
+
+        public Date getCheckinDate() {
+            return checkinDate;
+        }
+
+        public void setCheckinDate(Date checkinDate) {
+            this.checkinDate = checkinDate;
+        }
+
+        public Date getCheckoutDate() {
+            return checkoutDate;
+        }
+
+        public void setCheckoutDate(Date checkoutDate) {
+            this.checkoutDate = checkoutDate;
+        }
+    }
+    private  List<CustomerProperties> customerProperties;
     private String userID;
     private String userType; // [Owner] Type [Customer] Type
     private String firstName;
     public User()
     {
         ownerProperties = new ArrayList<Property>();
-        customerProperties = new ArrayList<Property>();
+        customerProperties = new ArrayList<CustomerProperties>();
     }
 
     public List<Property> getOwnerProperties() {
@@ -29,16 +67,26 @@ abstract public class User implements IDisplay {
     {
         ownerProperties.add(property);
     }
+    public void addCustomerProperty(Property property, Date bookingDate, Date checkinDate, Date checkoutDate)
+    {
+        CustomerProperties c = new CustomerProperties();
+        c.setProperty(property);
+        c.setBookingDate(bookingDate);
+        c.setCheckinDate(checkinDate);
+        c.setCheckoutDate(checkoutDate);
+        customerProperties.add(c);
+    }
 
     public void setOwnerProperties(List<Property> ownerProperties) {
         this.ownerProperties = ownerProperties;
     }
 
-    public List<Property> getCustomerProperties() {
+
+    public List<CustomerProperties> getCustomerProperties() {
         return customerProperties;
     }
 
-    public void setCustomerProperties(List<Property> customerProperties) {
+    public void setCustomerProperties(List<CustomerProperties> customerProperties) {
         this.customerProperties = customerProperties;
     }
 

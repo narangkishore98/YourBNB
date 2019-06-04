@@ -42,7 +42,7 @@ public class  DataStore
     {
         fileName = newFileName;
     }
-    public static  List<User> getUsersFromJSON(String fileName) throws IOException, ParseException {
+    public static  List<User> getUsersFromJSON(String fileName) throws IOException, ParseException, java.text.ParseException {
         List<User> userList = new ArrayList<User>();
         File f = new File(fileName);
         FileReader fr = new FileReader(f);
@@ -151,6 +151,7 @@ public class  DataStore
                 {
                     JSONObject oJSONObject = (JSONObject) customerPropertiesIterator.next();
                     String propertyID = (String) oJSONObject.get("propertyID");
+                    SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
                     if(propertyID.startsWith("A"))
                     {
                         Apartment h = new Apartment();
@@ -160,8 +161,10 @@ public class  DataStore
                         h.setMaxPeopleAllowed(((Long)oJSONObject.get("maxPeopleAllowed")).byteValue());
                         h.setPerPersonPrice(((Long)oJSONObject.get("perPersonPrice")).floatValue());
                         h.setPrice(((Long)oJSONObject.get("price")).floatValue());
-
-                        user.addOwnerProperty(h);
+                        Date booking = sdf.parse((String)oJSONObject.get("bookingDate"));
+                        Date checkin = sdf.parse((String)oJSONObject.get("checkinDate"));
+                        Date checkout = sdf.parse((String)oJSONObject.get("checkoutDate"));
+                        user.addCustomerProperty(h, booking, checkin, checkout);
                     }
                     else if(propertyID.startsWith("B"))
                     {
@@ -173,7 +176,10 @@ public class  DataStore
                         h.setPerPersonPrice(((Long)oJSONObject.get("perPersonPrice")).floatValue());
                         h.setPrice(((Long)oJSONObject.get("price")).floatValue());
 
-                        user.addOwnerProperty(h);
+                        Date booking = sdf.parse((String)oJSONObject.get("bookingDate"));
+                        Date checkin = sdf.parse((String)oJSONObject.get("checkinDate"));
+                        Date checkout = sdf.parse((String)oJSONObject.get("checkoutDate"));
+                        user.addCustomerProperty(h, booking, checkin, checkout);
                     }
                     else if(propertyID.startsWith("C"))
                     {
