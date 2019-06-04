@@ -1,6 +1,6 @@
 {
   "users": [{
-    "userID": "C100",
+    "userID": "o100",
     "firstName": "Kishore",
     "lastName": "Narang",
     "gender": "M",
@@ -45,7 +45,7 @@
     ]
   },
     {
-      "userID": "C101",
+      "userID": "o101",
       "firstName": "TarlochanPreet",
       "lastName": "Singh",
       "gender": "M",
