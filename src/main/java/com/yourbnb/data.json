@@ -1,6 +1,6 @@
 {
   "users": [{
-    "userID": "C100",
+    "userID": "O100",
     "firstName": "Kishore",
     "lastName": "Narang",
     "gender": "M",
@@ -45,7 +45,7 @@
     ]
   },
     {
-      "userID": "C101",
+      "userID": "O101",
       "firstName": "TarlochanPreet",
       "lastName": "Singh",
       "gender": "M",
@@ -90,9 +90,9 @@
           "maxPeopleAllowed": 6,
           "perPersonPrice": 15,
           "price": 65,
-          "bookingdate": "03/05/2019",
-          "checkingdate": "04/05/2019",
-          "checkoutdate": "05/05/2019"
+          "bookingDate": "03/05/2019",
+          "checkingDate": "04/05/2019",
+          "checkoutDate": "05/05/2019"
         },
           {
             "propertyID": "H901",
@@ -101,9 +101,9 @@
             "maxPeopleAllowed": 1,
             "perPersonPrice": 13,
             "price": 13,
-            "bookingdate": "16/04/2019",
-            "checkingdate": "19/04/2019",
-            "checkoutdate": "21/04/2019"
+            "bookingDate": "16/04/2019",
+            "checkingDate": "19/04/2019",
+            "checkoutDate": "21/04/2019"
           },
           {
             "propertyID": "B901",
@@ -112,9 +112,9 @@
             "maxPeopleAllowed": 4,
             "perPersonPrice": 30,
             "price": 100,
-            "bookingdate": "20/11/2018",
-            "checkingdate": "23/11/2018",
-            "checkoutdate": "27/11/2018"
+            "bookingDate": "20/11/2018",
+            "checkingDate": "23/11/2018",
+            "checkoutDate": "27/11/2018"
           }
         ]
       ]
