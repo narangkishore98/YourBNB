@@ -9,6 +9,12 @@ public class Condominium extends Property implements IDisplay
     {
 
     }
+    @Override
+    public String getPropertyID()
+    {
+        return "C"+super.getPropertyID();
+    }
+
 
     @Override
     public String propertyDescription() {
