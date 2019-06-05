@@ -24,7 +24,7 @@ import java.util.List;
 
 public class  DataStore
 {
-    static String fileName = "../log.txt";
+    static String fileName = "log.txt";
     public static void log(String message) throws IOException
     {
         File f = new File(fileName);
@@ -37,6 +37,7 @@ public class  DataStore
         DateFormat df = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss a");
 
         fw.write(df.format(d)+" ---- "+message);
+        fw.close();
     }
     public static void changeLogPath(String newFileName)
     {
@@ -45,6 +46,8 @@ public class  DataStore
 
 
     public static  List<User> getUsersFromJSON(String fileName) throws IOException, ParseException, java.text.ParseException {
+
+
         List<User> userList = new ArrayList<User>();
         File f = new File(fileName);
         FileReader fr = new FileReader(f);

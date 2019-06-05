@@ -150,7 +150,7 @@ abstract public class User implements IDisplay {
         }
         else
         {
-            throw new InvalidEmailException("Invalid Email.");
+            throw new InvalidEmailException("Invalid Email ID."+email);
         }
     }
 

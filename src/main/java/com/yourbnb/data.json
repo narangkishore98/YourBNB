@@ -20,7 +20,7 @@
           "propertyID": "A901",
           "propertyName": "Sheraton Centre Toronto Apartment",
           "fullAddress": "123 Queen St W, Toronto, ON - M5H 2M9",
-          "maxPeopleAllowed": 4,
+          "maxPeopleAllowed": 3,
           "perPersonPrice": 200,
           "price": 600
         },

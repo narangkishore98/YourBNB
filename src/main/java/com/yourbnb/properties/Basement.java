@@ -11,7 +11,7 @@ public class Basement  extends  Property implements IDisplay {
     }
 
     @Override
-    public String propertyDescription() {
+    public String display() {
         return "Property Name: "+getPropertyName()+"\n" +
                 "Property ID: "+getPropertyID()+"\n" +
                 "Address: "+getFullAddress()+"\n" +
@@ -21,7 +21,7 @@ public class Basement  extends  Property implements IDisplay {
     }
 
     @Override
-    public String display() {
+    public String propertyDescription() {
         return "A basement or cellar is one or more floors of a building that are completely or partly below the ground floor. ";
     }
 }
